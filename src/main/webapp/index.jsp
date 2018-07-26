@@ -2,8 +2,9 @@
 <html>
 <body style="background-color:powderblue;">
 
-<h1>Welcome to Maven Project Demo </h1>
-<h2>You are running my project </h2>
+<h1>SSPCLOUDPRO BLOG</h1>
+  <h2> This is a Mave Project, you are sseing this throug apache tomcat</h2>
+
 
 
 
