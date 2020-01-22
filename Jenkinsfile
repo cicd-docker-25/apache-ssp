@@ -1,6 +1,5 @@
 
 node() {
-// Delete the workspace
 //deleteDir()
 stage('Retrieve source code') {
     checkout scm
@@ -15,7 +14,7 @@ try {
        }
     }
    stage('Deploy') {
-        sh "/bin/cp -f $WORKSPACE/Build-${env.BUILD_NUMBER}/sspWebApp_${env.BRANCH_NAME}${env.BUILD_NUMBER}.war /opt/tomcat/webapps/sspWebApp.war"
+        sh "/bin/cp -f $WORKSPACE/Build-${env.BUILD_NUMBER}/sspWebApp_${env.BRANCH_NAME}${env.BUILD_NUMBER}.war /opt/apache-tomcat-9.0.30/webapps/sspWebApp.war"
     }
   
    delivery.artifactory()
